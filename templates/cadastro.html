@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro de Receita</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <main>
+      <h1>Cadastro de Receita</h1>
+
+      <!--
+        FUTURO: A lógica de processamento do formulário (método POST) será
+        implementada no backend (Flask) para salvar os dados no SQLite.
+      -->
+      <form method="POST" action="/cadastro">
+        <div class="form-control">
+          <label for="nome">Nome da receita</label>
+          <input type="text" id="nome" name="nome" placeholder="Ex.: Bolo de Cenoura" required>
+        </div>
+
+        <div class="form-control">
+          <label for="descricao">Ingredientes e modo de preparo</label>
+          <textarea id="descricao" name="descricao" rows="6" placeholder="Liste ingredientes e descreva o preparo" required></textarea>
+        </div>
+
+        <button type="submit">Salvar</button>
+      </form>
+
+      <p><a href="/">Voltar para a página principal</a></p>
+    </main>
+  </body>
+  </html>
+
+
