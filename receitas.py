@@ -1,5 +1,5 @@
 """
-Aplicação web esqueleto para gerenciar receitas de uma doceria MEI.
+Aplicação web para gerenciar receitas de uma doceria.
 
 Tecnologias: Flask (backend/web) e SQLite (a ser integrado futuramente).
 """
